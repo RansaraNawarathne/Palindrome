@@ -1,6 +1,7 @@
 import * as readline from 'node:readline/promises'
 import { naivePalindrome } from './Naive';
 import { twoPointesPalindrome } from './TwoPointers';
+import { recursivePalindrome } from './Recursive';
 
 const readlineObj: readline.Interface = readline.createInterface({
     input: process.stdin,
@@ -14,6 +15,7 @@ try {
 
     naivePalindrome (userInp);
     twoPointesPalindrome (userInp);
+    recursivePalindrome (userInp);
 
 } finally {
     readlineObj.close();
